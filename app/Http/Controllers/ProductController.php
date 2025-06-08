@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
-use App\Models\Product;
 use Illuminate\Support\Facades\Storage;
+use App\Models\Product;
 use App\Models\Category;
-
 
 class ProductController extends Controller
 {
@@ -98,9 +98,12 @@ class ProductController extends Controller
     }
 
     public function show($id)
-{
-    $product = Product::findOrFail($id); // دریافت محصول بر اساس ID
+    {
+        $product = Product::findOrFail($id); // دریافت محصول بر اساس ID
 
-    return view('product_detail', compact('product'));
-}
+        return view('product_detail', compact('product'));
+    }
+
+
+ 
 }

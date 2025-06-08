@@ -9,6 +9,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PageController;
 use GuzzleHttp\Middleware;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\CartController;
 // Route::get('/test',function (){
 //     return view('orders');
 // });
@@ -87,3 +88,8 @@ Route::put('/products/{product}', [ProductController::class, 'update'])->name('p
 
 // حذف محصول
 Route::delete('/products/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
+
+Route::get('/products', [CartController::class, 'getProducts'])->name('products.get');
+Route::get('/cart', function () {
+    return view('orders');
+})->name('orders.show');

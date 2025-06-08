@@ -21,17 +21,21 @@
     <div class="top2">
         <div class="container">
             <div class="row">
+
                 <div class="col-md-6">
                     <div class="login">
+                        <a href="{{ route('home.index') }}" class="mybtn" style="padding-left: 150px;"><i
+                                class="fa home"style="text-align: left;display: inline-block;"></i>Easy Shop</a>
                         @if (Auth::check())
                             <li>سلام،{{ Auth::user()->name }}!</li>
                             <li><a href="{{ route('logoutuser') }}">خروج</a></li>
+                            <a href="{{ route('orders.show') }}" class="mybtn"><i class="fa fa-cart-arrow-down"></i>سبد
+                                خرید</a>
                         @else
                             <a href="{{ route('showRegister') }}" class="mybtn"><i class="fa fa-user-plus"></i>ثبت
                                 نام</a>
                             <a href="{{ route('showLoginUsers') }}" class="mybtn"><i class="fa fa-user-o"></i>ورود</a>
                         @endif
-                        {{-- <a href="#" class="mybtn"><i class="fa fa-cart-arrow-down"></i>سبد</a> --}}
                     </div>
                 </div>
                 <div class="col-md-6">

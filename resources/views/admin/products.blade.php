@@ -1,5 +1,5 @@
 @extends('master')
-@section('users')
+@section('main')
     <!-- /.row -->
     <div class="row">
         <div class="col-12">
@@ -68,4 +68,4 @@
         </div>
     </div>
     <!-- /.row -->
-@endsection
+@stop

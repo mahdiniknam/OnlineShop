@@ -1,7 +1,6 @@
-
 @extends('layout')
 @section('category')
- <div class="main-menu">
+    <div class="main-menu">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -99,27 +98,28 @@
             </div>
         </div>
         <!---------------------------------->
-       <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="one-slider">
-                <h4>دوربین عکاسی</h4>
-                <div class="owl-carousel owl-theme ov1">
-                    @foreach ($dorbins as $dorbin)
-                        <div class="item"> <!-- هر محصول باید یک "item" جدا باشد -->
-                            <figure>
-                                <a href="{{ route('product.show', $dorbin->id) }}"><img src="{{ asset('storage/' . $dorbin->image) }}" class="w-100" /></a>
-                            </figure>
-                            <h5>{{ $dorbin->name }}</h5>
-                            <h6>{{ $dorbin->description }}</h6>
-                            <span>{{ $dorbin->price }}</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="one-slider">
+                        <h4>دوربین عکاسی</h4>
+                        <div class="owl-carousel owl-theme ov1">
+                            @foreach ($dorbins as $dorbin)
+                                <div class="item"> <!-- هر محصول باید یک "item" جدا باشد -->
+                                    <figure>
+                                        <a href="{{ route('product.show', $dorbin->id) }}"><img
+                                                src="{{ asset('storage/' . $dorbin->image) }}" class="w-100" /></a>
+                                    </figure>
+                                    <h5>{{ $dorbin->name }}</h5>
+                                    <h6>{{ $dorbin->description }}</h6>
+                                    <span>{{ $dorbin->price }}</span>
+                                </div>
+                            @endforeach
                         </div>
-                    @endforeach
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
         <!---------------------------------->
         {{-- <div class="container">
@@ -135,26 +135,27 @@
         <!---------------------------------->
         {{-- $phones     $phone --}}
         <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="one-slider">
-                <h4>دوربین عکاسی</h4>
-                <div class="owl-carousel owl-theme ov1">
-                    @foreach ($phones as $phone)
-                        <div class="item"> <!-- هر محصول باید یک "item" جدا باشد -->
-                            <figure>
-                                <a href="{{ route('product.show', $phone->id) }}"><img src="{{ asset('storage/' . $phone->image) }}" class="w-100" /></a>
-                            </figure>
-                            <h5>{{ $phone->name }}</h5>
-                            <h6>{{ $phone->description }}</h6>
-                            <span>{{ $phone->price }}</span>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="one-slider">
+                        <h4>دوربین عکاسی</h4>
+                        <div class="owl-carousel owl-theme ov1">
+                            @foreach ($phones as $phone)
+                                <div class="item"> <!-- هر محصول باید یک "item" جدا باشد -->
+                                    <figure>
+                                        <a href="{{ route('product.show', $phone->id) }}"><img
+                                                src="{{ asset('storage/' . $phone->image) }}" class="w-100" /></a>
+                                    </figure>
+                                    <h5>{{ $phone->name }}</h5>
+                                    <h6>{{ $phone->description }}</h6>
+                                    <span>{{ $phone->price }}</span>
+                                </div>
+                            @endforeach
                         </div>
-                    @endforeach
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
         <!---------------------------------->
         {{-- <div class="container">
@@ -170,26 +171,27 @@
         <!---------------------------------->
         {{-- $laptops  $laptop --}}
         <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="one-slider">
-                <h4>دوربین عکاسی</h4>
-                <div class="owl-carousel owl-theme ov1">
-                    @foreach ($laptops as $laptop)
-                        <div class="item"> <!-- هر محصول باید یک "item" جدا باشد -->
-                            <figure>
-                                <a href="{{ route('product.show', $laptop->id) }}"><img src="{{ asset('storage/' . $laptop->image) }}" class="w-100" /></a>
-                            </figure>
-                            <h5>{{ $laptop->name }}</h5>
-                            <h6>{{ $laptop->description }}</h6>
-                            <span>{{ $laptop->price }}</span>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="one-slider">
+                        <h4>دوربین عکاسی</h4>
+                        <div class="owl-carousel owl-theme ov1">
+                            @foreach ($laptops as $laptop)
+                                <div class="item"> <!-- هر محصول باید یک "item" جدا باشد -->
+                                    <figure>
+                                        <a href="{{ route('product.show', $laptop->id) }}"><img
+                                                src="{{ asset('storage/' . $laptop->image) }}" class="w-100" /></a>
+                                    </figure>
+                                    <h5>{{ $laptop->name }}</h5>
+                                    <h6>{{ $laptop->description }}</h6>
+                                    <span>{{ $laptop->price }}</span>
+                                </div>
+                            @endforeach
                         </div>
-                    @endforeach
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
         <!---------------------------------->
         {{-- <div class="container">

@@ -36,7 +36,8 @@ Route::get('/product/{id}', [ProductController::class, 'show'])->name('product.s
 // ----------------------------------------------------------------------------------------------
 
 
-
+// Route::get('dashbord', [AuthController::class, 'index'])->name('admin.index');
+// Route::post('dashbord', [AuthController::class, 'index'])->name('admin.index');
 Route::get('dashbord', function () {
     return view('admin.dashbord');
 });
@@ -72,7 +73,7 @@ Route::middleware(['auth', IsAdmin::class])->group(function () {
 
 // نمایش لیست محصولات
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
-Route::post('/products', [ProductController::class, 'index'])->name('products.index');
+// Route::post('/products', [ProductController::class, 'index'])->name('products.index');
 
 // نمایش فرم ایجاد محصول جدید
 Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');

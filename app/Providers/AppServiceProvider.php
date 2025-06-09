@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\Models\Category;
+use App\Models\Product;
 use Illuminate\Support\Facades\View;
 
 class AppServiceProvider extends ServiceProvider
@@ -22,5 +23,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
             View::share('categories', Category::all()); // اشتراک‌گذاری مقدار دسته‌بندی‌ها در همه صفحات
+            View::share('products', Product::all()); // اشتراک‌گذاری مقدار دسته‌بندی‌ها در همه صفحات
     }
 }

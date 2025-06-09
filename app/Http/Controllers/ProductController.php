@@ -14,7 +14,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
-        return view('admin.products', compact('products'));
+        return view('master', compact('products'));
     }
 
     // نمایش فرم ایجاد محصول جدید
@@ -105,5 +105,5 @@ class ProductController extends Controller
     }
 
 
- 
+
 }

@@ -226,14 +226,14 @@
                   </a>
                 </li>
               </ul>
-                <ul class="nav nav-treeview">
+                {{-- <ul class="nav nav-treeview">
                 <li class="nav-item">
                   <a href="{{route('products.index')}}" class="nav-link active">
                     <i class="fa fa-circle-o nav-icon"></i>
                     <p>همه محصولات</p>
                   </a>
                 </li>
-              </ul>
+              </ul> --}}
             </li>
         <!-- /.sidebar-menu -->
       </div>
